@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+header a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+header {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 80px;
+    color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #eaeaea;
+}
+
+header h1 {
+    display: flex;
+    margin: auto;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile:hover {
+    cursor: pointer; 
+}
+
+#check {
+    display: none;
+}
+
+article {
+    margin: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgb(16, 47, 80, .9);
+    transition: .4s;
+    z-index: 99999;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+
+.sidebar ul li {
+    padding: 24px;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: .4s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: #067690eb;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* .card-right {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 320px;
+    width: 550px;
+    margin-left: auto;
+    margin-top: 150px;
+} */
+
+.card-right img {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+.card img {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+img {
+    width: 275px;
+    height: 200px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    color: black;
+    box-shadow: 0 -1px 3px;
+} 
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+    header h1 {
+        display: inline-block;  
+    }
+}

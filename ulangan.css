@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #eaeaea;
+   background-image: url(ya.jpg);
 }
 
 a {
@@ -32,6 +32,7 @@ header {
     right: 0;
     left: 0;
     background-color: #eaeaea;
+    z-index: 99999;
 }
 
 header h1 {
@@ -123,21 +124,8 @@ article {
     width: 400px;
     margin: auto;
     margin-top: 150px;
-}
-
-/* .card-right {
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    height: 320px;
-    width: 550px;
-    margin-left: auto;
-    margin-top: 150px;
-} */
-
-.card-right img {
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 3px;
+    background-color: #fff;
+    border-radius: 30px;
 }
 
 .card img {
@@ -145,6 +133,21 @@ article {
     padding-right: 10px;
     padding-bottom: 3px;
 }
+
+/* .satu {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    
+}
+
+.dua {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:green;
+} */
 
 img {
     width: 275px;
@@ -155,14 +158,20 @@ footer {
     margin-top: 50px;
     padding: 25px;
     color: black;
-    box-shadow: 0 -1px 3px;
+    background-color: white;
+    box-shadow: 0px -4px 8px 0 rgba(0, 0, 0, 0.2);
 } 
 
 @media (max-width: 768px) {
-    .mobile {
+    /* .mobile {
         display: block;
-    }
-    header h1 {
-        display: inline-block;  
+    } */
+    h1 {
+        font-size: 25px;
+        position: fixed;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
